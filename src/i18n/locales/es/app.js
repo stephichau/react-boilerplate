@@ -1,0 +1,21 @@
+export default {
+  'title': 'React Boilerplate',
+  'home': 'inicio',
+  'loading': 'cargando',
+  'not found': 'no encontrado',
+  'examples': 'ejemplos',
+  'static pages': 'páginas estáticas',
+  'dynamic pages': 'páginas dinámicas',
+  'profile': 'perfil',
+  'settings': 'ajustes',
+  'activity log': 'registros de actividad',
+  'log out': 'cerrar sesión',
+  'previous': 'anterior',
+  'next': 'siguiente',
+  'page': 'página',
+  'of': 'de',
+  'no rows found': 'no se encontraron resultados',
+  'jump to page': 'ir a la página',
+  'rows per page': 'resultados por página',
+  'rows': 'resultados'
+}
