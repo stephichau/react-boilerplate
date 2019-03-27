@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ScrollToTop from './ScrollToTop';
+import Topnav from './Topnav';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<ScrollToTop />, div);
+  ReactDOM.render(<Topnav />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

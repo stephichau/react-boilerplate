@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-global).
+# React Boilerplate
+This project is a easy-to-start all-in-one code to fork and make any app you want.
 
-## Available Scripts
+## What's included
+* React 16
+* Redux-Saga
+* Bootstrap 4 (themed with SB Admin 2)
+* Font-Awesome
+* React-Table
+* I18next
+* Sass Support
+* ChartJS
+* Axios
+* SweetAlert
 
-In the project directory, you can run:
+## How to use it
+1. Clone this repo using `git clone git@github.com:seli-app/react-boilerplate.git`.
+2. Run `npm install`.
+3. Create your own API under `src/store/apis` and add it to `src/store/apis/index.js`.
+4. Create your own Reducers under `src/store/reducers` and add it to `src/store/reducers/index.js`.
+5. Create your own Actions under `src/store/actions`  and add it to `src/store/actions/index.js`.
+6. Add your logic to the magic Saga Middleware `src/store/sagas.js`.
+7. Create your Containers and Components to show your previous work.
+8. Translate every string under the `src/i18n/locales` folders.
+9. Run your tests with `npm test`.
 
-### `npm start`
+## What's missing
+* Alert component (with SweetAlert).
+* More tests (Enzyme is recommended here).
+* Customized Charts (with React-Table).
+* Google Maps component.
+* Local-Storage or something to save data.
 
-Runs the global in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Copyright
+This project is under MIT License and it was made with love & tendonitis by the Seli Team for public usage.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-global/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the global for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your global is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-global/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-global/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-global/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-global/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-global/docs/making-a-progressive-web-global
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-global/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-global/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-global/docs/troubleshooting#npm-run-build-fails-to-minify
+## Contributing
+Just fork this repo, do your magic and create your amazing pull-request.

@@ -4,7 +4,7 @@ import Icon from '../Icon/Icon';
 import {Link} from "react-router-dom";
 
 const page_header = (props) => {
-  const { title, subtitle, button } = props;
+  const { title, button } = props;
 
   return (
     <div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -13,9 +13,6 @@ const page_header = (props) => {
         <Link to={button.href} className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
           <Icon icon={button.icon} options="fa-sm text-white-50" /> <Trans>{ button.name }</Trans>
         </Link>
-      ) : null }
-      { subtitle ? (
-        <p className="mb-4"><Trans>{ subtitle }</Trans></p>
       ) : null }
     </div>
   );

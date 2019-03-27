@@ -1,3 +1,6 @@
+import {Trans} from "react-i18next";
+import React from "react";
+
 export default {
   'title': 'React Boilerplate',
   'home': 'home',
@@ -17,5 +20,10 @@ export default {
   'no rows found': 'no rows found',
   'jump to page': 'jump to page',
   'rows per page': 'rows per page',
-  'rows': 'rows'
+  'rows': 'rows',
+  'it looks like you found a glitch in the matrix': 'it looks like you found a glitch in the matrix',
+  'back to home': 'back to home',
+  'something went wrong': 'something went wrong',
+  'sorry, but something bad just happened': 'sorry, but something bad just happened',
+  'our engineers will be informed immediately': 'our engineers will be informed immediately'
 }

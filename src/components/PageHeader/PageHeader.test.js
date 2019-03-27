@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ScrollToTop from './ScrollToTop';
+import PageHeader from './PageHeader';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<ScrollToTop />, div);
+  ReactDOM.render(<PageHeader />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
