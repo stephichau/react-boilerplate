@@ -3,7 +3,7 @@ import './Navbar.scss';
 import Brand from './Brand/Brand';
 import Divider from './Divider/Divider';
 import Item from './Item/Item';
-import {withRouter} from "react-router-dom";
+// import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 import actions from "../../store/actions";
 import {Trans} from "react-i18next";
@@ -67,4 +67,4 @@ const mapDispatchToProps = (dispatch) => (
   }
 )
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(navbar));
+export default connect(mapStateToProps, mapDispatchToProps)(navbar);

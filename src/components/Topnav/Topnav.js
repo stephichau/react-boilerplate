@@ -1,7 +1,7 @@
 import React from 'react';
 import actions from "../../store/actions";
 import Icon from '../Icon/Icon';
-import {Link, withRouter} from "react-router-dom";
+import Link from 'next/link'; // withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 import {Trans} from "react-i18next";
 
@@ -38,9 +38,11 @@ const topnav = (props) => {
                   )
                 } else {
                   return (
-                    <Link key={index} className="dropdown-item" to={href}>
-                      <Icon icon={icon} options="fa-sm fa-fw mr-2 text-gray-400"/>
-                      <Trans>{name}</Trans>
+                    <Link key={index} href={href}>
+                      <a key={index} className="dropdown-item">
+                        <Icon icon={icon} options="fa-sm fa-fw mr-2 text-gray-400"/>
+                        <Trans>{name}</Trans>
+                      </a>
                     </Link>
                   );
                 }
@@ -79,4 +81,4 @@ const mapDispatchToProps = (dispatch) => (
   }
 );
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(topnav));
+export default connect(mapStateToProps, mapDispatchToProps)(topnav);

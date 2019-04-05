@@ -1,7 +1,7 @@
 import React from 'react';
 import './Users.scss';
 import PageHeader from "../../components/PageHeader/PageHeader";
-import {withRouter} from "react-router-dom";
+
 import {connect} from "react-redux";
 import { useTranslation } from 'react-i18next';
 import actions from "../../store/actions";
@@ -57,4 +57,4 @@ const mapDispatchToProps = (dispatch) => (
   }
 );
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(users));
+export default connect(mapStateToProps, mapDispatchToProps)(users);

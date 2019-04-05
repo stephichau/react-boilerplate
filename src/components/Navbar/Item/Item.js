@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Icon from '../../Icon/Icon';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'; // 'react-router-dom';
 import { Trans } from "react-i18next";
 
 class Item extends Component {
@@ -34,8 +34,8 @@ class Item extends Component {
               {items.map((item, index) => {
                 const {href, name} = item;
                 return (
-                  <Link key={index} className="collapse-item" to={href}>
-                    <Trans>{name}</Trans>
+                  <Link href={href}>
+                    <a><Trans key={index} className="collapse-item">{name}</Trans> </a>
                   </Link>
                 )
               })}
@@ -46,9 +46,11 @@ class Item extends Component {
     else
       return (
         <li className="nav-item">
-          <Link className="nav-link" to={href}>
-            {icon ? <Icon className="fas fa-fw fa-chart-area"/> : null}
-            <span><Trans>{name}</Trans></span>
+          <Link href={href}>
+            <a className="nav-link">
+              {icon ? <Icon className="fas fa-fw fa-chart-area"/> : null}
+              <span><Trans>{name}</Trans></span>
+            </a>
           </Link>
         </li>
       );
